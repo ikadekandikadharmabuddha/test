@@ -1,0 +1,82 @@
+/* Mengatur tampilan halaman */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #91dbdc;
+    color: #30b1c7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container utama */
+.container {
+    margin-top: 50px;
+}
+
+/* Header */
+h1 {
+    font-size: 28px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Foto */
+img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite alternate;
+}
+
+/* Paragraf pesan */
+p {
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Efek hati */
+.heart {
+    font-size: 30px;
+    animation: heartbeat 1s infinite;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-10px); }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Tombol */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #d6336c;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #b82a5a;
+}
